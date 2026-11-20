@@ -1,190 +1,111 @@
-<!doctype html>
-<html><head><meta charset="utf-8"><style>html,body{margin:0;padding:0;background:#f6f1e7}svg{display:block}</style></head>
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<title>The World Today — Friday 20 November 2026</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  width: 1024px; height: 1024px; background: #f7f1de;
+  font-family: Georgia, 'Times New Roman', serif; color: #1a1a1a;
+  padding: 10px 22px 8px 22px; overflow: hidden;
+}
+.masthead { text-align: center; }
+.masthead h1 {
+  font-size: 50px; letter-spacing: 3px; font-weight: 900; line-height: 1;
+}
+.dateline {
+  color: #a41220; font-size: 22px; font-weight: 800;
+  letter-spacing: 4px; margin-top: 4px;
+}
+.meta {
+  display: flex; justify-content: space-between;
+  color: #a41220; font-size: 13px; font-weight: 700;
+  letter-spacing: 2px; margin-top: 4px;
+}
+.rule { border: none; border-top: 3px solid #1a1a1a; margin: 6px 0 8px 0; }
+.tl-label {
+  color: #a41220; font-size: 12px; font-weight: 800; letter-spacing: 2px;
+}
+.timeline {
+  display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px;
+  margin: 3px 0 9px 0;
+}
+.tl-cell {
+  border: 1px solid #555; padding: 3px 7px 4px 7px; background: #fdfaf0;
+  height: 40px; overflow: hidden;
+}
+.tl-tag { color: #a41220; font-size: 10px; font-weight: 800; letter-spacing: 1px; }
+.tl-text { font-size: 12px; margin-top: 2px; }
+.leads {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 0 22px;
+}
+.lead {
+  border-top: 2px solid #1a1a1a; padding: 5px 2px 6px 2px;
+  height: 132px; overflow: hidden; position: relative;
+}
+.kicker {
+  color: #a41220; font-size: 11px; font-weight: 800; letter-spacing: 1px;
+}
+.lead-art { float: right; margin: 2px 0 0 8px; }
+.lead-head { font-size: 22px; font-weight: 900; line-height: 1.08; margin-top: 3px; }
+.lead-body { font-size: 12px; line-height: 1.32; margin-top: 4px; }
+.mediums {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 0 14px;
+  margin-top: 4px;
+}
+.med {
+  border-top: 1.5px solid #1a1a1a; padding: 4px 1px 5px 1px;
+  height: 84px; overflow: hidden;
+}
+.med-head { font-size: 13.5px; font-weight: 900; line-height: 1.12; margin-top: 2px; }
+.med-body { font-size: 10px; line-height: 1.28; margin-top: 3px; }
+.bottom { display: flex; gap: 16px; margin-top: 8px; }
+.map-box { width: 330px; flex-shrink: 0; }
+.map-title {
+  color: #a41220; font-size: 12px; font-weight: 800; letter-spacing: 2px;
+  margin-bottom: 3px;
+}
+.map-note { font-size: 9.5px; color: #555; margin-top: 2px; }
+.rest-wrap { flex: 1; }
+.rest-title {
+  color: #a41220; font-size: 12px; font-weight: 800; letter-spacing: 1px;
+  margin-bottom: 3px;
+}
+.rest-cols { display: flex; gap: 12px; }
+.rest-col { flex: 1; }
+.rest-row { font-size: 9.6px; line-height: 1.24; padding: 0.5px 0; }
+.rest-n { font-weight: 800; }
+.footer { border-top: 3px solid #1a1a1a; margin-top: 8px; padding-top: 5px; }
+.footer .fc-tag {
+  color: #a41220; font-size: 12px; font-weight: 900; letter-spacing: 1px;
+}
+.footer p { font-size: 11px; line-height: 1.35; margin-top: 2px; }
+</style></head>
 <body>
-<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
-<rect x="0" y="0" width="1024" height="1024" fill="#f6f1e7"/>
-<line x1="28" y1="12" x2="996" y2="12" stroke="#141414" stroke-width="2"/>
-<text x="512" y="60" font-family="Georgia, 'Noto Serif', serif" font-size="44" font-weight="bold" text-anchor="middle">THE WORLD TODAY</text>
-<text x="28" y="94" font-family="Arial, 'Noto Sans', sans-serif" font-size="13" font-weight="bold" fill="#a31621" letter-spacing="2">50 STORIES</text>
-<text x="512" y="94" font-family="Arial, 'Noto Sans', sans-serif" font-size="24" font-weight="bold" fill="#a31621" text-anchor="middle" letter-spacing="2">FRIDAY · 20 NOVEMBER 2026</text>
-<text x="996" y="94" font-family="Arial, 'Noto Sans', sans-serif" font-size="13" font-weight="bold" fill="#a31621" text-anchor="end" letter-spacing="2">SOURCES NAMED</text>
-<line x1="28" y1="106" x2="996" y2="106" stroke="#141414" stroke-width="4"/>
-<line x1="28" y1="112" x2="996" y2="112" stroke="#141414" stroke-width="1.5"/>
-<text x="28" y="130" font-family="Arial, 'Noto Sans', sans-serif" font-size="12" font-weight="bold" fill="#a31621" letter-spacing="1">THE DAY IN UTC</text>
-<rect x="28" y="136" width="188" height="32" fill="#ffffff" stroke="#141414" stroke-width="1"/>
-<text x="34" y="148" font-family="Arial, 'Noto Sans', sans-serif" font-size="10" font-weight="bold" fill="#a31621">OVERNIGHT</text>
-<text x="34" y="162" font-family="Arial, 'Noto Sans', sans-serif" font-size="11">Russia’s barrage hits Kyiv</text>
-<rect x="222" y="136" width="188" height="32" fill="#ffffff" stroke="#141414" stroke-width="1"/>
-<text x="228" y="148" font-family="Arial, 'Noto Sans', sans-serif" font-size="10" font-weight="bold" fill="#a31621">MORNING</text>
-<text x="228" y="162" font-family="Arial, 'Noto Sans', sans-serif" font-size="11">KOSPI plunges 4.8%</text>
-<rect x="416" y="136" width="188" height="32" fill="#ffffff" stroke="#141414" stroke-width="1"/>
-<text x="422" y="148" font-family="Arial, 'Noto Sans', sans-serif" font-size="10" font-weight="bold" fill="#a31621">MIDDAY</text>
-<text x="422" y="162" font-family="Arial, 'Noto Sans', sans-serif" font-size="11">UK and EU agree reset</text>
-<rect x="610" y="136" width="188" height="32" fill="#ffffff" stroke="#141414" stroke-width="1"/>
-<text x="616" y="148" font-family="Arial, 'Noto Sans', sans-serif" font-size="10" font-weight="bold" fill="#a31621">AFTERNOON</text>
-<text x="616" y="162" font-family="Arial, 'Noto Sans', sans-serif" font-size="11">Anthropic shares fall 11%</text>
-<rect x="804" y="136" width="188" height="32" fill="#ffffff" stroke="#141414" stroke-width="1"/>
-<text x="810" y="148" font-family="Arial, 'Noto Sans', sans-serif" font-size="10" font-weight="bold" fill="#a31621">EVENING</text>
-<text x="810" y="162" font-family="Arial, 'Noto Sans', sans-serif" font-size="11">Trump: data-centre tax</text>
-<rect x="28" y="176" width="478" height="146" fill="#fffdf5" stroke="#141414" stroke-width="1.5"/>
-<text x="42" y="196" font-family="Arial, 'Noto Sans', sans-serif" font-size="13" font-weight="bold" fill="#a31621" letter-spacing="1">WAR · KYIV · UKRAINE</text>
-<text x="42" y="226" font-family="Georgia, 'Noto Serif', serif" font-size="24" font-weight="bold">RUSSIA’S BARRAGE</text>
-<text x="42" y="256" font-family="Georgia, 'Noto Serif', serif" font-size="24" font-weight="bold">HITS KYIV BRIDGES</text>
-<text x="42" y="278" font-family="Arial, 'Noto Sans', sans-serif" font-size="13" fill="#333333">Eight killed as missiles and drones</text>
-<text x="42" y="294" font-family="Arial, 'Noto Sans', sans-serif" font-size="13" fill="#333333">strike bridges over the Dnipro and</text>
-<text x="42" y="310" font-family="Arial, 'Noto Sans', sans-serif" font-size="13" fill="#333333">knock out power. — Al Jazeera / Reuters</text>
-<rect x="382" y="280" width="104" height="16" fill="#7fa8c9" stroke="#141414" stroke-width="1.5"/><path d="M384,272 Q434,214 484,272" fill="none" stroke="#141414" stroke-width="3"/><line x1="384" y1="272" x2="484" y2="272" stroke="#141414" stroke-width="4"/><line x1="402" y1="246" x2="402" y2="272" stroke="#141414" stroke-width="2"/><line x1="434" y1="246" x2="434" y2="272" stroke="#141414" stroke-width="2"/><line x1="466" y1="246" x2="466" y2="272" stroke="#141414" stroke-width="2"/><polygon points="434,236 442,250 456,246 446,258 452,270 436,266 424,274 426,260 412,258 426,250" fill="#e8590c" stroke="#7f1d1d" stroke-width="1.5"/><circle cx="428" cy="224" r="8" fill="#9e9e9e"/><circle cx="440" cy="214" r="10" fill="#bdbdbd"/><circle cx="452" cy="204" r="7" fill="#e0e0e0"/><line x1="446" y1="272" x2="458" y2="280" stroke="#a31621" stroke-width="3"/><text x="434" y="310" font-family="Arial, 'Noto Sans', sans-serif" font-size="10" font-weight="bold" fill="#666666" text-anchor="middle">KYIV</text>
-<rect x="518" y="176" width="478" height="146" fill="#fffdf5" stroke="#141414" stroke-width="1.5"/>
-<text x="532" y="196" font-family="Arial, 'Noto Sans', sans-serif" font-size="13" font-weight="bold" fill="#a31621" letter-spacing="1">DIPLOMACY · LONDON · A DECADE ON</text>
-<text x="532" y="226" font-family="Georgia, 'Noto Serif', serif" font-size="24" font-weight="bold">UK AND EU AGREE</text>
-<text x="532" y="256" font-family="Georgia, 'Noto Serif', serif" font-size="24" font-weight="bold">RELATIONS RESET</text>
-<text x="532" y="278" font-family="Arial, 'Noto Sans', sans-serif" font-size="13" fill="#333333">A decade after Brexit, London and</text>
-<text x="532" y="294" font-family="Arial, 'Noto Sans', sans-serif" font-size="13" fill="#333333">Brussels agree steps towards closer</text>
-<text x="532" y="310" font-family="Arial, 'Noto Sans', sans-serif" font-size="13" fill="#333333">alignment. — AP / Al Jazeera</text>
-<ellipse cx="924" cy="288" rx="52" ry="10" fill="#8a6d3b" stroke="#5a4a28" stroke-width="2"/><rect x="918" y="288" width="12" height="18" fill="#5a4a28"/><line x1="888" y1="202" x2="888" y2="288" stroke="#5a4a28" stroke-width="3"/><line x1="944" y1="202" x2="944" y2="288" stroke="#5a4a28" stroke-width="3"/><rect x="888" y="202" width="32" height="20" fill="#012169" stroke="#141414" stroke-width="1.5"/><line x1="888" y1="202" x2="920" y2="222" stroke="#fff" stroke-width="4"/><line x1="920" y1="202" x2="888" y2="222" stroke="#fff" stroke-width="4"/><line x1="904" y1="202" x2="904" y2="222" stroke="#fff" stroke-width="6"/><line x1="888" y1="212" x2="920" y2="212" stroke="#fff" stroke-width="6"/><line x1="904" y1="202" x2="904" y2="222" stroke="#a31621" stroke-width="3"/><line x1="888" y1="212" x2="920" y2="212" stroke="#a31621" stroke-width="3"/><rect x="944" y="202" width="32" height="20" fill="#003399" stroke="#141414" stroke-width="1.5"/><circle cx="960.0" cy="205.0" r="1.3" fill="#ffcc00"/><circle cx="964.5" cy="205.9" r="1.3" fill="#ffcc00"/><circle cx="967.8" cy="208.5" r="1.3" fill="#ffcc00"/><circle cx="969.0" cy="212.0" r="1.3" fill="#ffcc00"/><circle cx="967.8" cy="215.5" r="1.3" fill="#ffcc00"/><circle cx="964.5" cy="218.1" r="1.3" fill="#ffcc00"/><circle cx="960.0" cy="219.0" r="1.3" fill="#ffcc00"/><circle cx="955.5" cy="218.1" r="1.3" fill="#ffcc00"/><circle cx="952.2" cy="215.5" r="1.3" fill="#ffcc00"/><circle cx="951.0" cy="212.0" r="1.3" fill="#ffcc00"/><circle cx="952.2" cy="208.5" r="1.3" fill="#ffcc00"/><circle cx="955.5" cy="205.9" r="1.3" fill="#ffcc00"/><circle cx="904" cy="276" r="9" fill="#e8c39e" stroke="#141414" stroke-width="1.5"/><circle cx="944" cy="276" r="9" fill="#e8c39e" stroke="#141414" stroke-width="1.5"/><circle cx="924" cy="280" r="5" fill="#f2c14e" stroke="#141414" stroke-width="1.5"/>
-<rect x="28" y="328" width="478" height="146" fill="#fffdf5" stroke="#141414" stroke-width="1.5"/>
-<text x="42" y="348" font-family="Arial, 'Noto Sans', sans-serif" font-size="13" font-weight="bold" fill="#a31621" letter-spacing="1">MARKETS · ARTIFICIAL INTELLIGENCE</text>
-<text x="42" y="378" font-family="Georgia, 'Noto Serif', serif" font-size="24" font-weight="bold">ANTHROPIC SHARES</text>
-<text x="42" y="408" font-family="Georgia, 'Noto Serif', serif" font-size="24" font-weight="bold">SLUMP 11% ON DAY TWO</text>
-<text x="42" y="430" font-family="Arial, 'Noto Sans', sans-serif" font-size="13" fill="#333333">A day after the biggest IPO on record,</text>
-<text x="42" y="446" font-family="Arial, 'Noto Sans', sans-serif" font-size="13" fill="#333333">Claude’s maker slides as AI fever</text>
-<text x="42" y="462" font-family="Arial, 'Noto Sans', sans-serif" font-size="13" fill="#333333">fades. — Axios / Reuters</text>
-<rect x="382" y="388" width="104" height="60" fill="#fbeeee" stroke="#141414" stroke-width="1.5"/><path d="M390,396 L414,408 L430,404 L456,428 L478,440" fill="none" stroke="#a31621" stroke-width="3"/><polygon points="478,440 466,440 474,428" fill="#a31621"/><path d="M420,376 Q420,354 434,354 Q448,354 448,376 L452,380 L416,380 Z" fill="#f2c14e" stroke="#141414" stroke-width="1.5"/><circle cx="434" cy="384" r="3" fill="#141414"/><text x="390" y="442" font-family="Arial, 'Noto Sans', sans-serif" font-size="13" font-weight="bold" fill="#a31621">ANT −11%</text>
-<rect x="518" y="328" width="478" height="146" fill="#fffdf5" stroke="#141414" stroke-width="1.5"/>
-<text x="532" y="348" font-family="Arial, 'Noto Sans', sans-serif" font-size="13" font-weight="bold" fill="#a31621" letter-spacing="1">US · WHITE HOUSE · DATA CENTRES</text>
-<text x="532" y="378" font-family="Georgia, 'Noto Serif', serif" font-size="24" font-weight="bold">TRUMP THREATENS</text>
-<text x="532" y="408" font-family="Georgia, 'Noto Serif', serif" font-size="24" font-weight="bold">DATA-CENTRE TAX</text>
-<text x="532" y="430" font-family="Arial, 'Noto Sans', sans-serif" font-size="13" fill="#333333">US firms building data centres abroad</text>
-<text x="532" y="446" font-family="Arial, 'Noto Sans', sans-serif" font-size="13" fill="#333333">face a ‘tremendous tax’, he tells a</text>
-<text x="532" y="462" font-family="Arial, 'Noto Sans', sans-serif" font-size="13" fill="#333333">news conference. — Axios / NYT</text>
-<rect x="884" y="350" width="60" height="96" fill="#37474f" stroke="#141414" stroke-width="2"/><rect x="890" y="358" width="48" height="14" fill="#90a4ae" stroke="#141414" stroke-width="1.5"/><circle cx="896" cy="365" r="2" fill="#69f0ae"/><circle cx="904" cy="365" r="2" fill="#ffd43b"/><line x1="912" y1="362" x2="932" y2="362" stroke="#546e7a" stroke-width="1.5"/><line x1="912" y1="368" x2="932" y2="368" stroke="#546e7a" stroke-width="1.5"/><rect x="890" y="380" width="48" height="14" fill="#90a4ae" stroke="#141414" stroke-width="1.5"/><circle cx="896" cy="387" r="2" fill="#69f0ae"/><circle cx="904" cy="387" r="2" fill="#ffd43b"/><line x1="912" y1="384" x2="932" y2="384" stroke="#546e7a" stroke-width="1.5"/><line x1="912" y1="390" x2="932" y2="390" stroke="#546e7a" stroke-width="1.5"/><rect x="890" y="402" width="48" height="14" fill="#90a4ae" stroke="#141414" stroke-width="1.5"/><circle cx="896" cy="409" r="2" fill="#69f0ae"/><circle cx="904" cy="409" r="2" fill="#ffd43b"/><line x1="912" y1="406" x2="932" y2="406" stroke="#546e7a" stroke-width="1.5"/><line x1="912" y1="412" x2="932" y2="412" stroke="#546e7a" stroke-width="1.5"/><rect x="890" y="424" width="48" height="14" fill="#90a4ae" stroke="#141414" stroke-width="1.5"/><circle cx="896" cy="431" r="2" fill="#69f0ae"/><circle cx="904" cy="431" r="2" fill="#ffd43b"/><line x1="912" y1="428" x2="932" y2="428" stroke="#546e7a" stroke-width="1.5"/><line x1="912" y1="434" x2="932" y2="434" stroke="#546e7a" stroke-width="1.5"/><g transform="rotate(-14 950 432)"><rect x="924" y="420" width="52" height="24" fill="#ffffff" stroke="#a31621" stroke-width="2.5"/><text x="950" y="437" font-family="Arial, 'Noto Sans', sans-serif" font-size="15" font-weight="bold" fill="#a31621" text-anchor="middle">TAX</text></g><path d="M944,446 Q962,454 974,440" fill="none" stroke="#141414" stroke-width="2"/>
-<rect x="28" y="480" width="236" height="92" fill="#fffdf5" stroke="#141414" stroke-width="1"/>
-<text x="36" y="495" font-family="Arial, 'Noto Sans', sans-serif" font-size="10" font-weight="bold" fill="#a31621" letter-spacing="0.5">MARKETS · WALL STREET</text>
-<path d="M233,506 L240,498 L245,501 L253,489" fill="none" stroke="#a31621" stroke-width="2.5"/><polygon points="253,489 247,489 251,495" fill="#a31621"/><line x1="233" y1="507" x2="253" y2="507" stroke="#141414" stroke-width="1.5"/>
-<text x="36" y="516" font-family="Georgia, 'Noto Serif', serif" font-size="15" font-weight="bold">WALL ST FALLS 2%</text>
-<text x="36" y="534" font-family="Georgia, 'Noto Serif', serif" font-size="15" font-weight="bold">VIX JUMPS TO 28</text>
-<text x="36" y="552" font-family="Arial, 'Noto Sans', sans-serif" font-size="11" fill="#333333">S&amp;P 500 −2.02% as Fed hike fears</text>
-<text x="36" y="565" font-family="Arial, 'Noto Sans', sans-serif" font-size="11" fill="#333333">grow. — Reuters</text>
-<rect x="268" y="480" width="236" height="92" fill="#fffdf5" stroke="#141414" stroke-width="1"/>
-<text x="276" y="495" font-family="Arial, 'Noto Sans', sans-serif" font-size="10" font-weight="bold" fill="#a31621" letter-spacing="0.5">MARKETS · SEOUL · TOKYO</text>
-<path d="M473,489 L480,497 L485,494 L493,506" fill="none" stroke="#a31621" stroke-width="2.5"/><polygon points="493,506 487,506 491,500" fill="#a31621"/><line x1="473" y1="507" x2="493" y2="507" stroke="#141414" stroke-width="1.5"/>
-<text x="276" y="516" font-family="Georgia, 'Noto Serif', serif" font-size="15" font-weight="bold">KOSPI PLUNGES 4.8%</text>
-<text x="276" y="534" font-family="Georgia, 'Noto Serif', serif" font-size="15" font-weight="bold">SIDECAR TRIPS</text>
-<text x="276" y="552" font-family="Arial, 'Noto Sans', sans-serif" font-size="11" fill="#333333">Samsung, SK hynix slide; SoftBank</text>
-<text x="276" y="565" font-family="Arial, 'Noto Sans', sans-serif" font-size="11" fill="#333333">−14% in Tokyo. — SED / AJ Bell</text>
-<rect x="508" y="480" width="236" height="92" fill="#fffdf5" stroke="#141414" stroke-width="1"/>
-<text x="516" y="495" font-family="Arial, 'Noto Sans', sans-serif" font-size="10" font-weight="bold" fill="#a31621" letter-spacing="0.5">WEATHER · INDIA · ODISHA</text>
-<ellipse cx="723" cy="495" rx="10" ry="7" fill="#90a4ae" stroke="#141414" stroke-width="1.5"/><polygon points="721,501 726,501 722,507 727,507" fill="#ffd43b" stroke="#141414" stroke-width="1"/>
-<text x="516" y="516" font-family="Georgia, 'Noto Serif', serif" font-size="15" font-weight="bold">CYCLONE AKVAN</text>
-<text x="516" y="534" font-family="Georgia, 'Noto Serif', serif" font-size="15" font-weight="bold">WEAKENS OFF ODISHA</text>
-<text x="516" y="552" font-family="Arial, 'Noto Sans', sans-serif" font-size="11" fill="#333333">300,000 evacuated; heavy rain in</text>
-<text x="516" y="565" font-family="Arial, 'Noto Sans', sans-serif" font-size="11" fill="#333333">three states. — NDTV</text>
-<rect x="748" y="480" width="236" height="92" fill="#fffdf5" stroke="#141414" stroke-width="1"/>
-<text x="756" y="495" font-family="Arial, 'Noto Sans', sans-serif" font-size="10" font-weight="bold" fill="#a31621" letter-spacing="0.5">MIDDLE EAST · YEMEN</text>
-<path d="M963,486 Q972,496 970,502 Q968,508 963,508 Q958,508 956,502 Q954,496 963,486 Z" fill="#e8590c" stroke="#7f1d1d" stroke-width="1.5"/><path d="M963,496 Q967,500 963,504 Q959,504 963,496 Z" fill="#ffd43b"/>
-<text x="756" y="516" font-family="Georgia, 'Noto Serif', serif" font-size="15" font-weight="bold">SAUDIS STRIKE HOUTHIS</text>
-<text x="756" y="534" font-family="Georgia, 'Noto Serif', serif" font-size="15" font-weight="bold">5 DRONES DOWNED</text>
-<text x="756" y="552" font-family="Arial, 'Noto Sans', sans-serif" font-size="11" fill="#333333">Coalition hits Hodeidah and Sanaa;</text>
-<text x="756" y="565" font-family="Arial, 'Noto Sans', sans-serif" font-size="11" fill="#333333">missile intercepted. — AP · CLAIM</text>
-<rect x="28" y="576" width="236" height="92" fill="#fffdf5" stroke="#141414" stroke-width="1"/>
-<text x="36" y="591" font-family="Arial, 'Noto Sans', sans-serif" font-size="10" font-weight="bold" fill="#a31621" letter-spacing="0.5">JUSTICE · MYANMAR</text>
-<line x1="243" y1="584" x2="243" y2="602" stroke="#141414" stroke-width="2"/><line x1="235" y1="587" x2="251" y2="587" stroke="#141414" stroke-width="2"/><path d="M235,587 L232,594 L238,594 Z" fill="#f2c14e" stroke="#141414" stroke-width="1"/><path d="M251,587 L248,594 L254,594 Z" fill="#f2c14e" stroke="#141414" stroke-width="1"/><line x1="238" y1="602" x2="248" y2="602" stroke="#141414" stroke-width="2"/>
-<text x="36" y="612" font-family="Georgia, 'Noto Serif', serif" font-size="15" font-weight="bold">MYANMAR REJECTS</text>
-<text x="36" y="630" font-family="Georgia, 'Noto Serif', serif" font-size="15" font-weight="bold">ICJ GENOCIDE RULING</text>
-<text x="36" y="648" font-family="Arial, 'Noto Sans', sans-serif" font-size="11" fill="#333333">Naypyidaw calls Thursday’s verdict</text>
-<text x="36" y="661" font-family="Arial, 'Noto Sans', sans-serif" font-size="11" fill="#333333">‘unfair’. — Africanews</text>
-<rect x="268" y="576" width="236" height="92" fill="#fffdf5" stroke="#141414" stroke-width="1"/>
-<text x="276" y="591" font-family="Arial, 'Noto Sans', sans-serif" font-size="10" font-weight="bold" fill="#a31621" letter-spacing="0.5">DIPLOMACY · SEOUL</text>
-<rect x="477" y="582" width="12" height="22" rx="2" fill="#e8e0cc" stroke="#141414" stroke-width="1.5"/><rect x="479" y="585" width="8" height="13" fill="#bcd3e6"/><circle cx="483" cy="601" r="1.5" fill="#141414"/>
-<text x="276" y="612" font-family="Georgia, 'Noto Serif', serif" font-size="15" font-weight="bold">NO KIM MEETING</text>
-<text x="276" y="630" font-family="Georgia, 'Noto Serif', serif" font-size="15" font-weight="bold">AS TRUMP LEAVES ASIA</text>
-<text x="276" y="648" font-family="Arial, 'Noto Sans', sans-serif" font-size="11" fill="#333333">Seoul urges renewed US–North Korea</text>
-<text x="276" y="661" font-family="Arial, 'Noto Sans', sans-serif" font-size="11" fill="#333333">dialogue. — UPI</text>
-<rect x="508" y="576" width="236" height="92" fill="#fffdf5" stroke="#141414" stroke-width="1"/>
-<text x="516" y="591" font-family="Arial, 'Noto Sans', sans-serif" font-size="10" font-weight="bold" fill="#a31621" letter-spacing="0.5">LATIN AMERICA · BOGOTÁ</text>
-<line x1="723" y1="590" x2="723" y2="604" stroke="#141414" stroke-width="2"/><rect x="714" y="582" width="18" height="10" fill="#fff" stroke="#141414" stroke-width="1.5"/><line x1="717" y1="586" x2="729" y2="586" stroke="#a31621" stroke-width="1.5"/><line x1="717" y1="589" x2="725" y2="589" stroke="#141414" stroke-width="1"/>
-<text x="516" y="612" font-family="Georgia, 'Noto Serif', serif" font-size="15" font-weight="bold">COLOMBIA PROTESTS</text>
-<text x="516" y="630" font-family="Georgia, 'Noto Serif', serif" font-size="15" font-weight="bold">TAX AND US TROOPS</text>
-<text x="516" y="648" font-family="Arial, 'Noto Sans', sans-serif" font-size="11" fill="#333333">Thousands march against tax plans</text>
-<text x="516" y="661" font-family="Arial, 'Noto Sans', sans-serif" font-size="11" fill="#333333">and US military role. — Al Jazeera</text>
-<rect x="748" y="576" width="236" height="92" fill="#fffdf5" stroke="#141414" stroke-width="1"/>
-<text x="756" y="591" font-family="Arial, 'Noto Sans', sans-serif" font-size="10" font-weight="bold" fill="#a31621" letter-spacing="0.5">AFRICA · LILONGWE</text>
-<rect x="955" y="583" width="12" height="18" rx="2" fill="#e8e0cc" stroke="#141414" stroke-width="1.5"/><rect x="958" y="586" width="6" height="6" fill="#fff" stroke="#141414" stroke-width="1"/><path d="M967,588 L972,588 L972,598" fill="none" stroke="#141414" stroke-width="1.5"/><line x1="955" y1="601" x2="971" y2="601" stroke="#141414" stroke-width="1.5"/>
-<text x="756" y="612" font-family="Georgia, 'Noto Serif', serif" font-size="15" font-weight="bold">MALAWI FUEL CRISIS</text>
-<text x="756" y="630" font-family="Georgia, 'Noto Serif', serif" font-size="15" font-weight="bold">CAUSES CHAOS</text>
-<text x="756" y="648" font-family="Arial, 'Noto Sans', sans-serif" font-size="11" fill="#333333">Shortages paralyse motorists and</text>
-<text x="756" y="661" font-family="Arial, 'Noto Sans', sans-serif" font-size="11" fill="#333333">businesses. — Al Jazeera</text>
-<rect x="28" y="672" width="236" height="92" fill="#fffdf5" stroke="#141414" stroke-width="1"/>
-<text x="36" y="687" font-family="Arial, 'Noto Sans', sans-serif" font-size="10" font-weight="bold" fill="#a31621" letter-spacing="0.5">US · LOS ANGELES</text>
-<polygon points="234,679 240,685 236,689 243,694 239,699 250,698 253,691 246,688 249,682" fill="#b0bec5" stroke="#141414" stroke-width="1.5"/>
-<text x="36" y="708" font-family="Georgia, 'Noto Serif', serif" font-size="15" font-weight="bold">LA QUAKE 4.2</text>
-<text x="36" y="726" font-family="Georgia, 'Noto Serif', serif" font-size="15" font-weight="bold">RATTLES WIDE AREA</text>
-<text x="36" y="744" font-family="Arial, 'Noto Sans', sans-serif" font-size="11" fill="#333333">Temblor centred near Commerce</text>
-<text x="36" y="757" font-family="Arial, 'Noto Sans', sans-serif" font-size="11" fill="#333333">at 3:25 a.m. — LA Times</text>
-<rect x="268" y="672" width="236" height="92" fill="#fffdf5" stroke="#141414" stroke-width="1"/>
-<text x="276" y="687" font-family="Arial, 'Noto Sans', sans-serif" font-size="10" font-weight="bold" fill="#a31621" letter-spacing="0.5">US · CINCINNATI</text>
-<ellipse cx="483" cy="692" rx="10" ry="7" fill="#90a4ae" stroke="#141414" stroke-width="1.5"/><circle cx="490" cy="687" r="4" fill="#90a4ae" stroke="#141414" stroke-width="1.5"/><circle cx="477" cy="686" r="2" fill="#90a4ae" stroke="#141414" stroke-width="1"/><circle cx="491" cy="686" r="1" fill="#141414"/>
-<text x="276" y="708" font-family="Georgia, 'Noto Serif', serif" font-size="15" font-weight="bold">FIONA THE HIPPO</text>
-<text x="276" y="726" font-family="Georgia, 'Noto Serif', serif" font-size="15" font-weight="bold">DIES AFTER EATING HAT</text>
-<text x="276" y="744" font-family="Arial, 'Noto Sans', sans-serif" font-size="11" fill="#333333">Beloved zoo hippo dies days after</text>
-<text x="276" y="757" font-family="Arial, 'Noto Sans', sans-serif" font-size="11" fill="#333333">swallowing a visitor’s hat. — AP</text>
-<rect x="508" y="672" width="236" height="92" fill="#fffdf5" stroke="#141414" stroke-width="1"/>
-<text x="516" y="687" font-family="Arial, 'Noto Sans', sans-serif" font-size="10" font-weight="bold" fill="#a31621" letter-spacing="0.5">ECONOMY · US</text>
-<circle cx="723" cy="689" r="10" fill="#ffd43b" stroke="#141414" stroke-width="1.5"/><circle cx="719" cy="687" r="1.5" fill="#141414"/><circle cx="727" cy="687" r="1.5" fill="#141414"/><path d="M718,691 Q723,696 728,691" fill="none" stroke="#141414" stroke-width="1.5"/>
-<text x="516" y="708" font-family="Georgia, 'Noto Serif', serif" font-size="15" font-weight="bold">CONSUMER MOOD</text>
-<text x="516" y="726" font-family="Georgia, 'Noto Serif', serif" font-size="15" font-weight="bold">SURGES AFTER MIDTERMS</text>
-<text x="516" y="744" font-family="Arial, 'Noto Sans', sans-serif" font-size="11" fill="#333333">Sentiment jumps; inflation, not jobs,</text>
-<text x="516" y="757" font-family="Arial, 'Noto Sans', sans-serif" font-size="11" fill="#333333">blamed for hardship. — Axios</text>
-<rect x="748" y="672" width="236" height="92" fill="#fffdf5" stroke="#141414" stroke-width="1"/>
-<text x="756" y="687" font-family="Arial, 'Noto Sans', sans-serif" font-size="10" font-weight="bold" fill="#a31621" letter-spacing="0.5">SCIENCE · SPACE</text>
-<polygon points="963,678 966,686 974,686 968,691 970,699 963,694 956,699 958,691 952,686 960,686" fill="#ffd43b" stroke="#141414" stroke-width="1"/><circle cx="970" cy="681" r="2" fill="#fff" stroke="#141414" stroke-width="1"/>
-<text x="756" y="708" font-family="Georgia, 'Noto Serif', serif" font-size="15" font-weight="bold">DYING STAR SWALLOWS</text>
-<text x="756" y="726" font-family="Georgia, 'Noto Serif', serif" font-size="15" font-weight="bold">ITS COMPANION</text>
-<text x="756" y="744" font-family="Arial, 'Noto Sans', sans-serif" font-size="11" fill="#333333">A puffy star, 7× the sun’s mass,</text>
-<text x="756" y="757" font-family="Arial, 'Noto Sans', sans-serif" font-size="11" fill="#333333">swallows its companion. — Reuters</text>
-<line x1="28" y1="770" x2="996" y2="770" stroke="#141414" stroke-width="1.5"/>
-<text x="28" y="788" font-family="Arial, 'Noto Sans', sans-serif" font-size="12" font-weight="bold" fill="#a31621" letter-spacing="1">WHERE IT HAPPENED</text>
-<text x="348" y="788" font-family="Arial, 'Noto Sans', sans-serif" font-size="12" font-weight="bold" fill="#a31621" letter-spacing="1">THE REST OF THE DAY — 17 TO 50</text>
-<rect x="28" y="794" width="308" height="156" fill="#bcd3e6" stroke="#141414" stroke-width="1.5"/><polygon points="38.3,804.8 62.2,800.0 79.3,797.6 100.7,788.0 113.6,796.4 134.9,821.6 130.7,830.0 117.8,842.0 113.6,854.0 99.0,852.8 92.2,860.0 83.6,848.0 75.1,836.0 57.9,812.0" fill="#e8d9b0" stroke="#8a6d3b" stroke-width="1"/><polygon points="113.6,872.0 130.7,872.0 139.2,884.0 152.1,893.6 147.8,908.0 139.2,920.0 130.7,932.0 122.1,950.0 117.8,932.0 113.6,908.0" fill="#e8d9b0" stroke="#8a6d3b" stroke-width="1"/><polygon points="167.5,866.0 173.4,848.0 182.0,842.0 190.6,839.6 199.1,845.6 207.7,846.8 211.9,850.4 218.8,869.6 223.1,872.0 216.2,890.0 211.9,905.6 203.4,923.6 194.8,926.0 190.6,902.0 186.3,878.0 175.2,878.0" fill="#e8d9b0" stroke="#8a6d3b" stroke-width="1"/><polygon points="173.4,840.8 174.3,832.4 180.3,826.4 182.0,824.0 186.3,820.4 188.8,815.6 197.4,816.8 200.0,818.0 202.5,814.4 206.0,812.0 203.4,806.0 197.4,804.8 192.3,800.0 186.3,812.0 177.7,814.4 173.4,824.0" fill="#e8d9b0" stroke="#8a6d3b" stroke-width="1"/><polygon points="207.7,809.6 216.2,802.4 233.3,800.0 250.4,796.4 267.6,791.6 284.7,796.4 301.8,797.6 318.9,800.0 334.3,804.8 327.4,812.0 320.6,816.8 317.2,824.0 303.5,830.0 301.8,838.4 297.5,842.0 290.7,844.4 286.4,848.0 284.7,854.0 276.1,860.0 271.8,872.0 267.6,874.4 263.3,866.0 259.0,857.6 250.4,866.0 246.2,872.0 241.9,860.0 233.3,854.0 224.8,850.4 220.5,848.0 211.9,840.8 207.7,833.6" fill="#e8d9b0" stroke="#8a6d3b" stroke-width="1"/><polygon points="278.7,910.4 286.4,900.8 294.9,898.4 303.5,897.2 310.3,908.0 312.9,916.4 310.3,928.4 301.8,929.6 293.2,922.4 284.7,924.8 278.7,920.0" fill="#e8d9b0" stroke="#8a6d3b" stroke-width="1"/><circle cx="208.1" cy="823.5" r="3.5" fill="#a31621" stroke="#fff" stroke-width="1"/><text x="212.09444444444446" y="817.52" font-family="Arial, 'Noto Sans', sans-serif" font-size="8.5" font-weight="bold">KYIV</text><circle cx="181.9" cy="822.2" r="3.5" fill="#a31621" stroke="#fff" stroke-width="1"/><text x="129.91444444444446" y="818.2" font-family="Arial, 'Noto Sans', sans-serif" font-size="8.5" font-weight="bold">LONDON</text><circle cx="118.7" cy="835.2" r="3.5" fill="#a31621" stroke="#fff" stroke-width="1"/><text x="60.6888888888889" y="831.16" font-family="Arial, 'Noto Sans', sans-serif" font-size="8.5" font-weight="bold">NEW YORK</text><circle cx="222.0" cy="854.5" r="3.5" fill="#a31621" stroke="#fff" stroke-width="1"/><text x="225.95444444444442" y="864.48" font-family="Arial, 'Noto Sans', sans-serif" font-size="8.5" font-weight="bold">RIYADH</text><circle cx="255.4" cy="859.6" r="3.5" fill="#a31621" stroke="#fff" stroke-width="1"/><text x="249.4066666666667" y="871.64" font-family="Arial, 'Noto Sans', sans-serif" font-size="8.5" font-weight="bold">ODISHA</text><circle cx="290.7" cy="839.0" r="3.5" fill="#a31621" stroke="#fff" stroke-width="1"/><text x="260.65555555555557" y="835.0" font-family="Arial, 'Noto Sans', sans-serif" font-size="8.5" font-weight="bold">SEOUL</text><circle cx="118.7" cy="878.4" r="3.5" fill="#a31621" stroke="#fff" stroke-width="1"/><text x="74.6888888888889" y="890.36" font-family="Arial, 'Noto Sans', sans-serif" font-size="8.5" font-weight="bold">BOGOTÁ</text><circle cx="210.9" cy="900.7" r="3.5" fill="#a31621" stroke="#fff" stroke-width="1"/><text x="214.9177777777778" y="904.6800000000001" font-family="Arial, 'Noto Sans', sans-serif" font-size="8.5" font-weight="bold">LILONGWE</text>
-<text x="182" y="962" font-family="Arial, 'Noto Sans', sans-serif" font-size="9" fill="#666666" text-anchor="middle">Stylised map · red dots mark story locations</text>
-<text x="348" y="800.0" font-family="Arial, 'Noto Sans', sans-serif" font-size="10">17. Pentagon: Ukraine deep strikes “counterproductive” — NPR</text>
-<text x="348" y="809.6" font-family="Arial, 'Noto Sans', sans-serif" font-size="10">18. Senate votes on data-centre permitting bill — AP</text>
-<text x="348" y="819.2" font-family="Arial, 'Noto Sans', sans-serif" font-size="10">19. DOJ drops Alaska Senate challenge — AP</text>
-<text x="348" y="828.8" font-family="Arial, 'Noto Sans', sans-serif" font-size="10">20. Oil up Friday, set for weekly fall — Reuters</text>
-<text x="348" y="838.4" font-family="Arial, 'Noto Sans', sans-serif" font-size="10">21. EU aviation emissions plan faces Mideast pushback — Reuters</text>
-<text x="348" y="848.0" font-family="Arial, 'Noto Sans', sans-serif" font-size="10">22. German youth protest military expansion — Al Jazeera</text>
-<text x="348" y="857.6" font-family="Arial, 'Noto Sans', sans-serif" font-size="10">23. COP31 activists protest fossil-fuel failure — Africanews</text>
-<text x="348" y="867.2" font-family="Arial, 'Noto Sans', sans-serif" font-size="10">24. Somali protesters back UAE envoy expulsion — Africanews</text>
-<text x="348" y="876.8" font-family="Arial, 'Noto Sans', sans-serif" font-size="10">25. Tunisian activist Bensedrine jailed 5 years — Africanews</text>
-<text x="348" y="886.4" font-family="Arial, 'Noto Sans', sans-serif" font-size="10">26. 1 in 4 children lived in conflict zones in 2025 — Save the Children</text>
-<text x="348" y="896.0" font-family="Arial, 'Noto Sans', sans-serif" font-size="10">27. US protesters demand human control over AI — Africanews</text>
-<text x="348" y="905.6" font-family="Arial, 'Noto Sans', sans-serif" font-size="10">28. Iraq deal: Kataib Hezbollah to pull out in a month — AP</text>
-<text x="348" y="915.2" font-family="Arial, 'Noto Sans', sans-serif" font-size="10">29. Nvidia signals caution on China — Yahoo Finance</text>
-<text x="348" y="924.8" font-family="Arial, 'Noto Sans', sans-serif" font-size="10">30. Hyundai unveils new Avante at LA Auto Show — SED</text>
-<text x="348" y="934.4" font-family="Arial, 'Noto Sans', sans-serif" font-size="10">31. Russell Brand prison message stays on YouTube — Yahoo</text>
-<text x="348" y="944.0" font-family="Arial, 'Noto Sans', sans-serif" font-size="10">32. Lindsay Clancy to face retrial next year — Yahoo</text>
-<text x="348" y="953.6" font-family="Arial, 'Noto Sans', sans-serif" font-size="10">33. Gaza children swim in the sea — AP</text>
-<text x="676" y="800.0" font-family="Arial, 'Noto Sans', sans-serif" font-size="10">34. Bhutan’s wood-painting tradition — Africanews</text>
-<text x="676" y="809.6" font-family="Arial, 'Noto Sans', sans-serif" font-size="10">35. Japan’s rabbit island’s dark secret — Africanews</text>
-<text x="676" y="819.2" font-family="Arial, 'Noto Sans', sans-serif" font-size="10">36. Barnsley 1–2 Sheffield Wednesday — BBC Sport</text>
-<text x="676" y="828.8" font-family="Arial, 'Noto Sans', sans-serif" font-size="10">37. Southend 2–3 Boreham Wood — BBC Sport</text>
-<text x="676" y="838.4" font-family="Arial, 'Noto Sans', sans-serif" font-size="10">38. Cliftonville 3–2 Glentoran — BBC Sport</text>
-<text x="676" y="848.0" font-family="Arial, 'Noto Sans', sans-serif" font-size="10">39. SMAT: Saurashtra stay unbeaten; Unadkat 3–23 — ESPNcricinfo</text>
-<text x="676" y="857.6" font-family="Arial, 'Noto Sans', sans-serif" font-size="10">40. East Bengal 2–2 SC Delhi; Bengaluru 2–0 Mumbai City — BBC Sport</text>
-<text x="676" y="867.2" font-family="Arial, 'Noto Sans', sans-serif" font-size="10">41. Shakhtar 1–1 Livyi Bereh — BBC Sport</text>
-<text x="676" y="876.8" font-family="Arial, 'Noto Sans', sans-serif" font-size="10">42. Korea Cosmetics jumps 45% in two days — SED</text>
-<text x="676" y="886.4" font-family="Arial, 'Noto Sans', sans-serif" font-size="10">43. STX names Jeon Jae-gon CEO — SED</text>
-<text x="676" y="896.0" font-family="Arial, 'Noto Sans', sans-serif" font-size="10">44. 3.2m in Guatemala face crisis hunger — ReliefWeb</text>
-<text x="676" y="905.6" font-family="Arial, 'Noto Sans', sans-serif" font-size="10">45. Gold $3,722/oz, no haven bid — Rio Times</text>
-<text x="676" y="915.2" font-family="Arial, 'Noto Sans', sans-serif" font-size="10">46. US 10-year yield 5.048% — Rio Times</text>
-<text x="676" y="924.8" font-family="Arial, 'Noto Sans', sans-serif" font-size="10">47. Philadelphia Fed index 6.3 vs 20 expected — Rio Times</text>
-<text x="676" y="934.4" font-family="Arial, 'Noto Sans', sans-serif" font-size="10">48. Brazil Selic on hold at 13.75% — Rio Times</text>
-<text x="676" y="944.0" font-family="Arial, 'Noto Sans', sans-serif" font-size="10">49. Top traders buy SK hynix as it slides 6% — SED</text>
-<text x="676" y="953.6" font-family="Arial, 'Noto Sans', sans-serif" font-size="10">50. Mideast oil exports dip as Iran hits tankers — AP</text>
-<line x1="28" y1="970" x2="996" y2="970" stroke="#141414" stroke-width="1.5"/>
-<text x="28" y="988" font-family="Arial, 'Noto Sans', sans-serif" font-size="13" font-weight="bold" fill="#a31621" letter-spacing="1">DATE CHECK</text>
-<text x="140" y="988" font-family="Arial, 'Noto Sans', sans-serif" font-size="12.5">Every story above happened or was first reported on 20 November 2026.</text>
-<text x="28" y="1004" font-family="Arial, 'Noto Sans', sans-serif" font-size="12.5" fill="#333333">Excluded: Thursday’s ICJ genocide ruling (only Myanmar’s rejection today counts), the Shenzhen peace declaration,</text>
-<text x="28" y="1018" font-family="Arial, 'Noto Sans', sans-serif" font-size="12.5" fill="#333333">Anthropic’s $83 IPO pricing and the GTA VI launch (all 19 Nov). No future-dated event is featured. CLAIM = one-sided account.</text>
-</svg>
+<div class="masthead">
+  <h1>THE WORLD TODAY</h1>
+  <div class="dateline">FRIDAY · 20 NOVEMBER 2026</div>
+</div>
+<div class="meta"><span>50 STORIES</span><span>SOURCES NAMED</span></div>
+<hr class="rule">
+<div class="tl-label">THE DAY IN UTC</div><div class="timeline"><div class="tl-cell"><div class="tl-tag">OVERNIGHT</div><div class="tl-text">Russia&#x27;s barrage hits Kyiv</div></div><div class="tl-cell"><div class="tl-tag">MORNING</div><div class="tl-text">KOSPI plunges 4.8%</div></div><div class="tl-cell"><div class="tl-tag">MIDDAY</div><div class="tl-text">UK and EU agree reset</div></div><div class="tl-cell"><div class="tl-tag">AFTERNOON</div><div class="tl-text">Anthropic shares fall 11%</div></div><div class="tl-cell"><div class="tl-tag">EVENING</div><div class="tl-text">Trump: data-centre tax</div></div></div>
+<div class="leads"><div class="lead"><div class="kicker">WAR · KYIV · UKRAINE</div><div class="lead-art"><svg width="118" height="92" viewBox="0 0 118 92"><rect x="6" y="66" width="106" height="18" fill="#7fa8c9"/><path d="M10 66 Q59 22 108 66" fill="none" stroke="#3a3a3a" stroke-width="4"/><line x1="30" y1="52" x2="30" y2="66" stroke="#3a3a3a" stroke-width="3"/><line x1="59" y1="40" x2="59" y2="66" stroke="#3a3a3a" stroke-width="3"/><line x1="88" y1="52" x2="88" y2="66" stroke="#3a3a3a" stroke-width="3"/><polygon points="59,6 66,20 80,14 68,26 78,34 62,32 58,46 52,32 38,36 50,26 40,16 54,20" fill="#e8590c"/><circle cx="20" cy="14" r="7" fill="#c9c9c9"/><circle cx="34" cy="9" r="5" fill="#c9c9c9"/><text x="59" y="88" font-size="10" text-anchor="middle" fill="#333" font-family="Georgia,serif">KYIV</text></svg></div><div class="lead-head">RUSSIA&#x27;S BARRAGE HITS KYIV BRIDGES</div><div class="lead-body">Eight killed as missiles and drones strike bridges over the Dnipro and knock out power. — Al Jazeera / Reuters</div></div><div class="lead"><div class="kicker">DIPLOMACY · LONDON · A DECADE ON</div><div class="lead-art"><svg width="118" height="92" viewBox="0 0 118 92"><ellipse cx="59" cy="78" rx="46" ry="9" fill="#8a6d3b"/><line x1="34" y1="78" x2="34" y2="18" stroke="#3a3a3a" stroke-width="3"/><line x1="84" y1="78" x2="84" y2="18" stroke="#3a3a3a" stroke-width="3"/><rect x="34" y="18" width="30" height="20" fill="#012169"/><path d="M34 18 L64 38 M64 18 L34 38" stroke="#fff" stroke-width="3"/><path d="M34 18 L64 38 M64 18 L34 38" stroke="#c8102e" stroke-width="1.4"/><rect x="84" y="18" width="30" height="20" fill="#003399"/><circle cx="99" cy="28" r="7" fill="none" stroke="#ffcc00" stroke-width="1.6" stroke-dasharray="2 1.6"/><circle cx="46" cy="66" r="8" fill="#e8c39a"/><circle cx="74" cy="66" r="8" fill="#d9a066"/><rect x="52" y="72" width="14" height="6" fill="#5a4632"/></svg></div><div class="lead-head">UK AND EU AGREE RELATIONS RESET</div><div class="lead-body">A decade after Brexit, London and Brussels agree steps towards closer alignment. — AP / Al Jazeera</div></div><div class="lead"><div class="kicker">MARKETS · ARTIFICIAL INTELLIGENCE</div><div class="lead-art"><svg width="118" height="92" viewBox="0 0 118 92"><rect x="8" y="46" width="102" height="38" fill="#fdf6e3" stroke="#3a3a3a" stroke-width="1.5"/><path d="M59 8 c-9 0 -13 8 -13 17 l-3 8 h32 l-3 -8 c0 -9 -4 -17 -13 -17z" fill="#f2c14e" stroke="#8a6d1a" stroke-width="1.5"/><circle cx="59" cy="38" r="4" fill="#8a6d1a"/><polyline points="16,52 40,58 62,64 84,70 102,72" fill="none" stroke="#c8102e" stroke-width="2.5"/><polygon points="102,72 92,70 98,78" fill="#c8102e"/><text x="59" y="80" font-size="11" font-weight="bold" text-anchor="middle" fill="#c8102e" font-family="Georgia,serif">ANT −11%</text></svg></div><div class="lead-head">ANTHROPIC SHARES SLUMP 11% ON DAY TWO</div><div class="lead-body">A day after the biggest IPO on record, Claude&#x27;s maker slides as AI fever fades. — Axios / Reuters</div></div><div class="lead"><div class="kicker">US · WHITE HOUSE · DATA CENTRES</div><div class="lead-art"><svg width="118" height="92" viewBox="0 0 118 92"><rect x="22" y="6" width="56" height="80" fill="#3a4452" stroke="#222" stroke-width="1.5"/><rect x="28" y="12" width="44" height="14" fill="#5a6b7d"/><rect x="28" y="32" width="44" height="14" fill="#5a6b7d"/><rect x="28" y="52" width="44" height="14" fill="#5a6b7d"/><circle cx="34" cy="19" r="2.4" fill="#7ee787"/><circle cx="34" cy="39" r="2.4" fill="#f2c14e"/><circle cx="34" cy="59" r="2.4" fill="#7ee787"/><circle cx="34" cy="73" r="2.4" fill="#e8590c"/><g transform="rotate(-14 88 66)"><rect x="66" y="56" width="46" height="20" fill="#fff" stroke="#c8102e" stroke-width="2.5"/><text x="89" y="70" font-size="12" font-weight="bold" text-anchor="middle" fill="#c8102e" font-family="Georgia,serif">TAX</text></g></svg></div><div class="lead-head">TRUMP THREATENS DATA-CENTRE TAX</div><div class="lead-body">US firms building data centres abroad face a ‘tremendous tax’, he tells a news conference. — Axios / NYT</div></div></div>
+<div class="mediums"><div class="med"><div class="kicker">MARKETS · WALL STREET</div><div class="med-head">WALL ST FALLS 2% VIX JUMPS TO 28</div><div class="med-body">S&amp;P 500 −2.02% as Fed hike fears grow. — Reuters</div></div><div class="med"><div class="kicker">MARKETS · SEOUL · TOKYO</div><div class="med-head">KOSPI PLUNGES 4.8%, SIDECAR TRIPS</div><div class="med-body">Samsung, SK hynix slide; SoftBank −14% in Tokyo. — Seoul Economic Daily / AJ Bell</div></div><div class="med"><div class="kicker">WEATHER · INDIA · ODISHA</div><div class="med-head">CYCLONE AKVAN WEAKENS OFF ODISHA</div><div class="med-body">300,000 evacuated; heavy rain in three states. — NDTV</div></div><div class="med"><div class="kicker">MIDDLE EAST · YEMEN</div><div class="med-head">SAUDIS STRIKE HOUTHIS 5 DRONES DOWNED</div><div class="med-body">Coalition hits Hodeidah and Sanaa; missile intercepted. — AP · CLAIM</div></div><div class="med"><div class="kicker">JUSTICE · MYANMAR</div><div class="med-head">MYANMAR REJECTS ICJ GENOCIDE RULING</div><div class="med-body">Naypyidaw calls Thursday&#x27;s verdict ‘unfair’. — Africanews</div></div><div class="med"><div class="kicker">DIPLOMACY · SEOUL</div><div class="med-head">NO KIM MEETING AS TRUMP LEAVES ASIA</div><div class="med-body">Seoul urges renewed US–North Korea dialogue. — UPI</div></div><div class="med"><div class="kicker">LATIN AMERICA · BOGOTÁ</div><div class="med-head">COLOMBIA PROTESTS TAX AND US TROOPS</div><div class="med-body">Thousands march against tax plans and US military role. — Al Jazeera</div></div><div class="med"><div class="kicker">AFRICA · LILONGWE</div><div class="med-head">MALAWI FUEL CRISIS CAUSES CHAOS</div><div class="med-body">Shortages paralyse motorists and businesses. — Al Jazeera</div></div><div class="med"><div class="kicker">US · LOS ANGELES</div><div class="med-head">LA QUAKE 4.2 RATTLES WIDE AREA</div><div class="med-body">Temblor centred near Commerce at 3:25 a.m. — LA Times</div></div><div class="med"><div class="kicker">US · CINCINNATI</div><div class="med-head">FIONA THE HIPPO DIES AFTER EATING HAT</div><div class="med-body">Beloved zoo hippo dies days after swallowing a visitor&#x27;s hat. — AP</div></div><div class="med"><div class="kicker">ECONOMY · US</div><div class="med-head">CONSUMER MOOD SURGES AFTER MIDTERMS</div><div class="med-body">Sentiment jumps; inflation, not jobs, blamed for hardship. — Axios</div></div><div class="med"><div class="kicker">SCIENCE · SPACE</div><div class="med-head">DYING STAR SWALLOWS ITS COMPANION</div><div class="med-body">A puffy star, 7× the sun&#x27;s mass, swallows its companion. — Reuters</div></div></div>
+<div class="bottom">
+  <div class="map-box">
+    <div class="map-title">WHERE IT HAPPENED</div>
+    <svg width="330" height="190" viewBox="0 0 330 190"><rect x="0" y="0" width="330" height="190" fill="#cfe0ea"/><path d="M12 22 L92 16 L112 46 L96 82 L60 96 L30 76 L6 50 Z" fill="#ecd9a4" stroke="#8a7a4a" stroke-width="1.2"/><path d="M86 106 L122 100 L136 130 L116 166 L96 150 Z" fill="#ecd9a4" stroke="#8a7a4a" stroke-width="1.2"/><path d="M160 26 L200 20 L216 46 L190 62 L164 50 Z" fill="#ecd9a4" stroke="#8a7a4a" stroke-width="1.2"/><path d="M164 76 L216 70 L236 102 L214 146 L184 150 L164 116 Z" fill="#ecd9a4" stroke="#8a7a4a" stroke-width="1.2"/><path d="M216 20 L320 16 L326 70 L290 96 L250 86 L230 56 L214 44 Z" fill="#ecd9a4" stroke="#8a7a4a" stroke-width="1.2"/><path d="M276 140 L316 134 L322 164 L286 170 Z" fill="#ecd9a4" stroke="#8a7a4a" stroke-width="1.2"/><circle cx="72" cy="68" r="3.6" fill="#c8102e"/><text x="77" y="71" font-size="8.5" fill="#333" font-family="Georgia,serif">NEW YORK</text><circle cx="163" cy="42" r="3.6" fill="#c8102e"/><text x="168" y="45" font-size="8.5" fill="#333" font-family="Georgia,serif">LONDON</text><circle cx="186" cy="52" r="3.6" fill="#c8102e"/><text x="191" y="55" font-size="8.5" fill="#333" font-family="Georgia,serif">KYIV</text><circle cx="282" cy="72" r="3.6" fill="#c8102e"/><text x="287" y="75" font-size="8.5" fill="#333" font-family="Georgia,serif">SEOUL</text><circle cx="202" cy="96" r="3.6" fill="#c8102e"/><text x="207" y="99" font-size="8.5" fill="#333" font-family="Georgia,serif">RIYADH</text><circle cx="248" cy="100" r="3.6" fill="#c8102e"/><text x="253" y="103" font-size="8.5" fill="#333" font-family="Georgia,serif">ODISHA</text><circle cx="92" cy="122" r="3.6" fill="#c8102e"/><text x="97" y="125" font-size="8.5" fill="#333" font-family="Georgia,serif">BOGOTÁ</text><circle cx="186" cy="142" r="3.6" fill="#c8102e"/><text x="191" y="145" font-size="8.5" fill="#333" font-family="Georgia,serif">LILONGWE</text></svg>
+    <div class="map-note">Stylised map — red dots mark story locations</div>
+  </div>
+  <div class="rest-wrap">
+    <div class="rest-title">THE REST OF THE DAY — 17 TO 50</div>
+    <div class="rest-cols">
+      <div class="rest-col"><div class="rest-row"><span class="rest-n">17.</span> Pentagon: Ukraine deep strikes “counterproductive” — NPR</div><div class="rest-row"><span class="rest-n">18.</span> Senate votes on data-centre permitting bill — AP</div><div class="rest-row"><span class="rest-n">19.</span> DOJ drops Alaska Senate challenge — AP</div><div class="rest-row"><span class="rest-n">20.</span> Oil up Friday, set for weekly fall — Reuters</div><div class="rest-row"><span class="rest-n">21.</span> EU aviation emissions plan faces Mideast pushback — Reuters</div><div class="rest-row"><span class="rest-n">22.</span> German youth protest military expansion — Al Jazeera</div><div class="rest-row"><span class="rest-n">23.</span> COP31 activists protest fossil-fuel failure — Africanews</div><div class="rest-row"><span class="rest-n">24.</span> Somali protesters back UAE envoy expulsion — Africanews</div><div class="rest-row"><span class="rest-n">25.</span> Tunisian activist Bensedrine jailed 5 years — Africanews</div><div class="rest-row"><span class="rest-n">26.</span> 1 in 4 children lived in conflict zones in 2025 — Save the Children</div><div class="rest-row"><span class="rest-n">27.</span> US protesters demand human control over AI — Africanews</div><div class="rest-row"><span class="rest-n">28.</span> Iraq deal: Kataib Hezbollah to pull out in a month — AP</div><div class="rest-row"><span class="rest-n">29.</span> Nvidia signals caution on China — Yahoo Finance</div><div class="rest-row"><span class="rest-n">30.</span> Hyundai unveils new Avante at LA Auto Show — Seoul Economic Daily</div><div class="rest-row"><span class="rest-n">31.</span> Russell Brand prison message stays on YouTube — Yahoo</div><div class="rest-row"><span class="rest-n">32.</span> Lindsay Clancy to face retrial next year — Yahoo</div><div class="rest-row"><span class="rest-n">33.</span> Gaza children swim in the sea — AP</div></div>
+      <div class="rest-col"><div class="rest-row"><span class="rest-n">34.</span> Bhutan&#x27;s wood-painting tradition — Africanews</div><div class="rest-row"><span class="rest-n">35.</span> Japan&#x27;s rabbit island&#x27;s dark secret — Africanews</div><div class="rest-row"><span class="rest-n">36.</span> Barnsley 1–2 Sheffield Wednesday — BBC Sport</div><div class="rest-row"><span class="rest-n">37.</span> Southend 2–3 Boreham Wood — BBC Sport</div><div class="rest-row"><span class="rest-n">38.</span> Cliftonville 3–2 Glentoran — BBC Sport</div><div class="rest-row"><span class="rest-n">39.</span> SMAT: Saurashtra stay unbeaten; Unadkat 3–23 — ESPNcricinfo</div><div class="rest-row"><span class="rest-n">40.</span> East Bengal 2–2 SC Delhi; Bengaluru 2–0 Mumbai City — BBC Sport</div><div class="rest-row"><span class="rest-n">41.</span> Shakhtar 1–1 Livyi Bereh — BBC Sport</div><div class="rest-row"><span class="rest-n">42.</span> Korea Cosmetics jumps 45% in two days — Seoul Economic Daily</div><div class="rest-row"><span class="rest-n">43.</span> STX names Jeon Jae-gon CEO — Seoul Economic Daily</div><div class="rest-row"><span class="rest-n">44.</span> 3.2m in Guatemala face crisis hunger — ReliefWeb</div><div class="rest-row"><span class="rest-n">45.</span> Gold $3,722/oz, no haven bid — Rio Times</div><div class="rest-row"><span class="rest-n">46.</span> US 10-year yield 5.048% — Rio Times</div><div class="rest-row"><span class="rest-n">47.</span> Philadelphia Fed index 6.3 vs 20 expected — Rio Times</div><div class="rest-row"><span class="rest-n">48.</span> Brazil Selic on hold at 13.75% — Rio Times</div><div class="rest-row"><span class="rest-n">49.</span> Top traders buy SK hynix as it slides 6% — Seoul Economic Daily</div><div class="rest-row"><span class="rest-n">50.</span> Mideast oil exports dip as Iran hits tankers — AP</div></div>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <span class="fc-tag">DATE CHECK</span>
+  <p>Every story above happened or was first reported on 20 November 2026. Excluded: Thursday&#x27;s ICJ genocide ruling (only Myanmar&#x27;s rejection today counts), the Shenzhen peace declaration, Anthropic&#x27;s $83 IPO pricing and the GTA VI launch (all 19 Nov). No future-dated event is featured. CLAIM = one-sided account.</p>
+</div>
 </body></html>
